@@ -2,7 +2,7 @@ FROM krallin/ubuntu-tini:xenial
 MAINTAINER Ross Allan <docker@nallar.me>
 
 ENV LANG=C.UTF-8 \
-FIXPERMISSIONS=true \
+FIX_PERMISSIONS=true \
 DISPLAY=:20 \
 VNC_PASSWORD=CHANGEME
 
