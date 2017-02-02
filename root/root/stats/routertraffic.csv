@@ -1,0 +1,18 @@
+Model,Command,Interface,Other,Reversed,Confirmed
+Custom,,,,,
+8800NL,ifconfig,ppp***,,N,Y
+DG834GT,ifconfig,ppp***,,N,Y
+DG834Gv4,ifconfig,ppp***,,N,Y
+DGN2200,ifconfig,Other...,nas1,N,
+DSL-2640B,ifconfig,ppp***,,N,
+HG610,ifconfig,ppp***,,N,N
+HG612 (ADSL) [1],ifconfig,atm***,,N,Y
+HG612 (ADSL) [2],ifconfig,ppp***,,N,Y
+HG612 (VDSL2) [1],ifconfig,Other...,ptm1.301,N,
+HG612 (VDSL2) [2],ifconfig,Other...,ptm,N,Y
+HG622 [1],ifconfig,Other...,0.0.38,N,Y
+HG622 [2],ifconfig,Other...,nas_0_38,N,Y
+TG582N,ip iflist (Thomson),,,N,Y
+TG585v7,ip iflist (Thomson),,,N,Y
+TG589vn v3,ip iflist (Thomson),,,N,Y
+TG784,ip iflist (Thomson),,,N,Y

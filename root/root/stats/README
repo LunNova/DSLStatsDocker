@@ -1,0 +1,44 @@
+DSLstats 5.8.x
+-------------
+
+DSLstats is a DSL router monitoring program for Linux and Windows. It's free
+and open source, and is released under GPL2/LGPL.
+
+In principle this program should work with any Broadcom-based DSL router which
+has a fully functioning telnet interface with access to the Broadcom CLI.
+
+Please note that the "Telnet password" item may in some routers be different
+from the password used for logging into the GUI interface. For example, in the
+case of the Huawei HG612, if you change the GUI password, this does not change
+the telnet password, which remains as "admin".
+
+Installation
+------------
+There is no installation as such. After extracting the files from the downloaded
+archive, copy the folder with all its files to a directory of your choosing.
+This directory should be one where you have full read/write permission. 
+Double-click on the executable (dslstats or dslstats.exe) to run the program.
+
+On first running the program, go to the Configuration tab and fill in the
+login details for your router. You can select a router from the drop-down list
+and edit the details as necessary, or just fill in the details manually.
+If the router is a Thomson/Technicolor model, it's necessary to tick the option
+"Router is a Thomson/Technicolor model". When you've finished, press the 
+"Start recording" button at the left of the toolbar.
+
+When the program is closed it saves its configuration settings in a file called
+dslstats.ini - it doesn't write anything to the Windows Registry.
+On Linux systems this configuration file is saved in ~/.dslstats/ and on Windows
+systems it is saved (by default) in the same directory as the executable.
+
+
+Disclaimer
+----------
+
+This software is provided in good faith, in the hope that some people may find it useful. It has
+been extensively tested, and is believed to work as described, but the author can accept no
+responsibility for any consequences arising from use of the software.
+
+Eric Chapman
+http://dslstats.plainroad.me.uk
+
