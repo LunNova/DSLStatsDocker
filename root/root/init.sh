@@ -6,8 +6,10 @@ if [ "x$FIX_PERMISSIONS"="xtrue" ]; then
 	chmod -R 0777 /root/.dslstats
 fi
 
-x11vnc -forever -usepw -create &
-sleep 20
-cd /root/stats
+Xvfb $DISPLAY -screen 0 1600x900x24 &
+sleep 5
+x11vnc -forever -usepw -display $DISPLAY -shared &
+sleep 5
+cd /root/dslstats
 ./dslstats startrecording
 wait $!

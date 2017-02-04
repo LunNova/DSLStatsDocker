@@ -3,7 +3,7 @@ MAINTAINER Ross Allan <docker@nallar.me>
 
 ENV LANG=C.UTF-8 \
 FIX_PERMISSIONS=true \
-DISPLAY=:20 \
+DISPLAY=:0 \
 VNC_PASSWORD=CHANGEME
 
 COPY root/ /
