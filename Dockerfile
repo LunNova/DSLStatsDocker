@@ -14,4 +14,4 @@ EXPOSE 5900
 
 VOLUME /config
 
-ENTRYPOINT ["/usr/local/bin/tini", "--", "/root/init.sh"]
+ENTRYPOINT ["/usr/local/bin/tini", "-g", "-v", "--", "/root/init.sh"]
