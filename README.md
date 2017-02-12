@@ -2,6 +2,7 @@
 
 [DSLStats](http://www.s446074245.websitehome.co.uk/downloads.html)
 
+This container starts DSLStats inside a virtual X session. A VNC server is created which you can connect to to interact with DSLStats.
 
 **Usage**
 ```
