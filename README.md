@@ -19,7 +19,7 @@ Please replace all user variables in the above command defined by <> with the co
 
 **Access application**
 
-Connect using VNC to port 5900 (or the port you configured) to set up DSLstats.
+Connect using a VNC client (for example [VNC for Chrome](https://chrome.google.com/webstore/detail/vnc%C2%AE-viewer-for-google-ch/iabmpiboiopbgfabjmgeedhcmjenhbla?hl=en)) to port 5900 (or the port you configured) to set up DSLstats.
 
 **Example**
 ```
