@@ -12,4 +12,3 @@ ls
 chmod +x dslstats/dslstats
 
 mkdir ~/.vnc
-x11vnc -storepasswd "$VNC_PASSWORD" ~/.vnc/passwd
