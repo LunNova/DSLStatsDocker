@@ -10,7 +10,7 @@ COPY root/ /
 RUN chmod +x /root/*.sh && /bin/sh /root/install.sh
 
 #Expose ports (VNC)
-EXPOSE 5900 55555
+EXPOSE 5900 8080
 
 VOLUME /config
 
