@@ -10,6 +10,7 @@ docker run -d \
 	--name=<container name> \
 	--net=bridge \
 	-p <vnc port>:5900/tcp \
+	-p <web port>:55555/tcp \
 	-e "VNC_PASSWORD"="<vnc password>"
 	-v <path for DSLStats config files to be stored>:/config \
 	-v /etc/localtime:/etc/localtime:ro \
@@ -28,6 +29,7 @@ docker run -d \
 	--name=dslstats \
 	--net=bridge \
 	-p 5900:5900/tcp \
+	-p 55555:55555/tcp \
 	-e "VNC_PASSWORD"="123456789" \
 	-v /mnt/cache/appdata/dslstats:/config \
 	-v /etc/localtime:/etc/localtime:ro \
