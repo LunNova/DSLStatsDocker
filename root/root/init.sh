@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm /tmp/.X0*
+
 ln -s /config /root/.dslstats
 
 if [ "x$FIX_PERMISSIONS"="xtrue" ]; then
