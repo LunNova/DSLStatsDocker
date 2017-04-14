@@ -11,4 +11,8 @@ mv dslstats64L-5.9 dslstats
 ls
 chmod +x dslstats/dslstats
 
+echo "Europe/London" > /etc/timezone
+rm /etc/localtime
+dpkg-reconfigure -f noninteractive tzdata
+
 mkdir ~/.vnc
