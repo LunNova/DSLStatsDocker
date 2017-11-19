@@ -6,10 +6,10 @@ apt-get update && apt-get install -y --force-yes --no-install-recommends \
     && apt-get autoclean && apt-get autoremove && rm -rf /var/lib/apt/lists/*
 
 cd /root/
-wget -O dslstats.tar.gz http://dslstats.me.uk/files/dslstats64L-6.0.1.tar.gz
+wget -O dslstats.tar.gz http://dslstats.me.uk/files/dslstats64L-6.1.tar.gz
 tar -zxvf dslstats.tar.gz
 rm dslstats.tar.gz
-mv dslstats64L-6.0.1 dslstats
+mv dslstats64L-6.1 dslstats
 chmod +x dslstats/dslstats
 
 echo "Europe/London" > /etc/timezone
