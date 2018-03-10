@@ -18,8 +18,9 @@ x11vnc -forever -usepw -display $DISPLAY -shared &
 PID2=$!
 sleep 5
 
-mkdir -p /root/.dslstats/webserver/
-cd /root/.dslstats/webserver/
+webserverdir=`cat /config/dslstats.ini | grep Snapshotdir | awk -F"=" '{print $2 "/webserver"}'`
+mkdir -p $webserverdir
+cd $webserverdir
 
 python -m SimpleHTTPServer 8080 &
 PID3=$!
