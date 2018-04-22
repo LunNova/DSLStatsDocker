@@ -18,8 +18,12 @@ x11vnc -forever -usepw -display $DISPLAY -shared &
 PID2=$!
 sleep 5
 
-mkdir -p /root/.dslstats/webserver/
-cd /root/.dslstats/webserver/
+if [ -d /root/.dslstats/webserver/]; then
+	mv /root/.dslstats/webserver/ /root/.dslstats/Webserver/
+fi
+
+mkdir -p /root/.dslstats/Webserver/
+cd /root/.dslstats/Webserver/
 
 python -m SimpleHTTPServer 8080 &
 PID3=$!
